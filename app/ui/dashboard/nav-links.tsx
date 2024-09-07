@@ -8,6 +8,7 @@ import {
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import { Herr_Von_Muellerhoff } from 'next/font/google';
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
@@ -19,6 +20,7 @@ const links = [
     icon: DocumentDuplicateIcon,
   },
   { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Custom', href: '/dashboard/custom', icon: UserGroupIcon },
 ];
 
 export default function NavLinks() {
